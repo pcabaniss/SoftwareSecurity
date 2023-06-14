@@ -1,1 +1,15 @@
-# SoftwareSecurity
+## SoftwareSecurity
+# Briefly summarize your client, Artemis Financial, and their software requirements. Who was the client? What issue did they want you to address?
+Artemis Financial is a financial institution with no experience with secure software development. They contacted our company at SNHU to do a full review of their codebase and provide security solutions, recommendations, and a report.
+# What did you do very well when you found your client’s software security vulnerabilities? Why is it important to code securely? What value does software security add to a company’s overall well-being?
+We ran physically read through the code to identify and repair any vulnerabilities. Then we ran dependency checks to ensure that everything was up-to-date and secure. Any issues we found, we repaired and put in the report what we had done. As well as provided steps and information to steer the company in the right direction. 
+# What part of the vulnerability assessment was challenging or helpful to you?
+The most challenging part was the dependency checks. While it is easier to just run a check, actually sitting down and analyzing each and every error can be tedious. Especially in larger applications. Suppressing false positives can help, but there are many issues to sort through most of the time. 
+# How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation techniques to use?
+We determined that an algorithm cipher was required to make communications secure and implemented the SHA-256 AES algorithm paired with RSA. Suggested input validation, and explained secure coding standards that are needed to ensure security in the future. 
+# How did you make certain the code and software application were functional and secure? After refactoring the code, how did you check to see whether you introduced new vulnerabilities?
+The first step is to actually run the program to ensure it runs. We then set up a spring-boot connection on a secure HTTPS server. We sent a string in and hashed the data through our encryption. Created a self-signed certificate and used that to make sure our connection was secure and displayed the data to ensure proper transportation. 
+# What resources, tools, or coding practices did you use that might be helpful in future assignments or tasks?
+There were various algorithms that were looked at throughout the project. We used the maven-dependency-check plugin for dependency testing. We uploaded and worked on our code base inside the Eclipse Java IDE. 
+# Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show future employers from this assignment?
+That I have gained an understanding of secure coding practices. While overlooked, software security should be a top priority in any company with data flowing. There are so many threats to information and businesses out there. It is up to the company to instill these secure principles in their employees to ensure the safety of the customer and their data. Starting early is always a best bet, trying to secure a product late in development can lead to catastrophic effects later on. 
